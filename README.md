@@ -5,7 +5,7 @@
 - Ensure flutter web is enabled on your stable branch of flutter:- 
 
     ```
-    flutter config -- enable -web 
+    flutter config --enable-web 
     ```
 - Run the web - app using:-
     ```
