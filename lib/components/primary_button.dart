@@ -3,7 +3,9 @@ import 'package:flutter/material.dart';
 import '../constants.dart';
 
 TextButton getPrimaryButton(
-    {String title, bool isMobile = false, Function onPressed}) {
+    {required String title,
+    bool isMobile = false,
+    void Function()? onPressed}) {
   return TextButton(
     child: Container(
       padding: isMobile

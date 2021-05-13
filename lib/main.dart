@@ -1,8 +1,10 @@
 //neccesary packages import
+// ignore: avoid_web_libraries_in_flutter
 import 'dart:html';
 
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+// ignore: import_of_legacy_library_into_null_safe
 import 'package:get/get.dart';
 import 'package:test_web/screens/blog.dart';
 //screens import
@@ -27,7 +29,8 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         fontFamily: 'Montserrat',
-        primarySwatch: primaryColor,
+        // primarySwatch: primaryColor,
+        primarySwatch: colorPrimary,
       ),
       home: HomePage(),
       color: darkBackground1,
@@ -66,8 +69,8 @@ class HomePageState extends State<HomePage> {
       );
 
   Widget getNavMenuButton({
-    String title,
-    int pageIndex,
+    required String title,
+    required int pageIndex,
   }) {
     return Obx(() => Container(
           padding: EdgeInsets.all(8.0),

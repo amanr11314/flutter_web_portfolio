@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+// ignore: import_of_legacy_library_into_null_safe
 import 'package:get/get.dart';
 import 'package:test_web/components/heading_content_tile.dart';
 import 'package:test_web/components/primary_button.dart';
@@ -71,9 +72,9 @@ class ProjectPage extends StatelessWidget {
                 ),
                 btnSecondary: getSecondaryButton(
                   isMobile: isMobile,
-                  title: project.textSecondary,
+                  title: project.textSecondary!,
                   onPressed: () {
-                    launch(project.linkSecondary);
+                    launch(project.linkSecondary!);
                   },
                 ),
               );

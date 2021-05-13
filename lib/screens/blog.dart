@@ -5,7 +5,7 @@ import '../constants.dart';
 class BlogPage extends StatelessWidget {
   final bool isMobile;
 
-  BlogPage({this.isMobile});
+  BlogPage({this.isMobile = false});
   @override
   Widget build(BuildContext context) {
     return Column(

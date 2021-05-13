@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+// ignore: import_of_legacy_library_into_null_safe
 import 'package:get/get.dart';
 import 'package:test_web/components/heading_content_tile.dart';
 import 'package:test_web/components/primary_button.dart';
@@ -7,10 +8,6 @@ import 'package:test_web/constants.dart';
 import 'package:test_web/controller/page_controller.dart';
 
 class HomeDeskop extends StatelessWidget {
-  HomeDeskop({
-    Key key,
-  }) : super(key: key);
-
   final MyPageController _controller = Get.find(tag: 'GlobalPageController');
   @override
   Widget build(BuildContext context) {

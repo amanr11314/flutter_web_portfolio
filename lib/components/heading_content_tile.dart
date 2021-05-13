@@ -6,19 +6,19 @@ class HeadingContentTile extends StatelessWidget {
   final bool isOffWhite;
   final String title;
   final bool isMobile;
-  final String duration;
+  final String? duration;
   final String content;
-  final Widget btnPrimary;
-  final Widget btnSecondary;
-  final String iconUrlString;
+  final Widget? btnPrimary;
+  final Widget? btnSecondary;
+  final String? iconUrlString;
 
   HeadingContentTile(
-      {Key key,
+      {Key? key,
       this.isOffWhite = false,
-      this.title,
+      required this.title,
       this.isMobile = false,
       this.duration,
-      this.content,
+      required this.content,
       this.iconUrlString,
       this.btnPrimary,
       this.btnSecondary});
@@ -41,7 +41,7 @@ class HeadingContentTile extends StatelessWidget {
               children: [
                 if (iconUrlString != null)
                   Image.network(
-                    iconUrlString,
+                    iconUrlString!,
                     height: 40.0,
                     width: 40.0,
                   ),
@@ -58,7 +58,7 @@ class HeadingContentTile extends StatelessWidget {
             SizedBox(height: 16.0),
             if (duration != null)
               Text(
-                duration,
+                duration!,
                 style: TextStyle(
                   color: offWhite,
                   fontSize: 14.0,
@@ -79,9 +79,9 @@ class HeadingContentTile extends StatelessWidget {
             if (btnPrimary != null || btnSecondary != null)
               Row(
                 children: [
-                  if (btnPrimary != null) btnPrimary,
+                  if (btnPrimary != null) btnPrimary!,
                   if (btnPrimary != null) SizedBox(width: 16.0),
-                  if (btnSecondary != null) btnSecondary,
+                  if (btnSecondary != null) btnSecondary!,
                 ],
               )
           ],
