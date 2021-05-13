@@ -61,6 +61,7 @@ class ProjectPage extends StatelessWidget {
                 duration: project.duration,
                 content: project.description,
                 isMobile: isMobile,
+                iconUrlString: project.iconUrl,
                 btnPrimary: getPrimaryButton(
                   isMobile: isMobile,
                   title: project.textPrimary,
