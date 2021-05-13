@@ -10,6 +10,7 @@ class HeadingContentTile extends StatelessWidget {
   final String content;
   final Widget btnPrimary;
   final Widget btnSecondary;
+  final String iconUrlString;
 
   HeadingContentTile(
       {Key key,
@@ -18,6 +19,7 @@ class HeadingContentTile extends StatelessWidget {
       this.isMobile = false,
       this.duration,
       this.content,
+      this.iconUrlString,
       this.btnPrimary,
       this.btnSecondary});
   @override
@@ -35,13 +37,23 @@ class HeadingContentTile extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(
-              title,
-              style: TextStyle(
-                color: offWhite,
-                fontSize: 24.0,
-                fontWeight: FontWeight.w400,
-              ),
+            Row(
+              children: [
+                if (iconUrlString != null)
+                  Image.network(
+                    iconUrlString,
+                    height: 40.0,
+                    width: 40.0,
+                  ),
+                Text(
+                  title,
+                  style: TextStyle(
+                    color: offWhite,
+                    fontSize: 24.0,
+                    fontWeight: FontWeight.w400,
+                  ),
+                ),
+              ],
             ),
             SizedBox(height: 16.0),
             if (duration != null)
