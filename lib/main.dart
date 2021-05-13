@@ -6,7 +6,7 @@ import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 // ignore: import_of_legacy_library_into_null_safe
 import 'package:get/get.dart';
-import 'package:test_web/screens/blog.dart';
+import 'package:Portfolio/screens/blog.dart';
 //screens import
 import 'screens/screens.dart';
 //some predefined constants import

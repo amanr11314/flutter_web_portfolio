@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 // ignore: import_of_legacy_library_into_null_safe
 import 'package:get/get.dart';
-import 'package:test_web/components/heading_content_tile.dart';
-import 'package:test_web/components/primary_button.dart';
-import 'package:test_web/components/secondary_button.dart';
-import 'package:test_web/constants.dart';
-import 'package:test_web/controller/project_controller.dart';
+import 'package:Portfolio/components/heading_content_tile.dart';
+import 'package:Portfolio/components/primary_button.dart';
+import 'package:Portfolio/components/secondary_button.dart';
+import 'package:Portfolio/constants.dart';
+import 'package:Portfolio/controller/project_controller.dart';
 
 import 'package:url_launcher/url_launcher.dart';
 

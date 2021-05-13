@@ -1,6 +1,6 @@
 // ignore: import_of_legacy_library_into_null_safe
 import 'package:get/get.dart';
-import 'package:test_web/model/project_model.dart';
+import 'package:Portfolio/model/project_model.dart';
 
 class ProjectController extends GetxController {
   late List<ProjectModel> allProjects;
