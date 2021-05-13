@@ -8,8 +8,11 @@ class ProjectModel {
   final String textSecondary;
   final String linkSecondary;
 
+  final String iconUrl;
+
   ProjectModel({
     this.title,
+    this.iconUrl,
     this.duration,
     this.description,
     this.textPrimary,
